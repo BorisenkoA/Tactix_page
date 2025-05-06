@@ -1,2 +1,6 @@
 @use "../utilites" as *;
-@forward "header/header";
+@use "header/header";
+@use "innovation/innovation";
+@use "services/services";
+@use "strategic/strategic";
+@use "clients/clients";

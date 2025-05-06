@@ -291,6 +291,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: all 0.3s ease;
 }
 .header-logo img {
   width: 3.3rem;
@@ -303,6 +304,10 @@
   color: #FFFFFF;
   margin-top: 0.2rem;
 }
+.header-logo:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
 
 .header-nav-list {
   display: flex;
@@ -314,11 +319,13 @@
 .header-nav-link {
   color: #FFFFFF;
   font-size: 14px;
+  font-weight: 600;
   padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
   transition: all 0.3s ease;
 }
 .header-nav-link:hover {
-  color: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .header-button {
@@ -640,6 +647,44 @@
     top: 20rem;
     width: 30rem;
     height: 30rem;
+  }
+  .header-bottom {
+    width: 100%;
+    margin-top: 36rem;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .header {
+    padding: 2.4rem 2.4rem 9.6rem;
+    gap: 12rem;
+  }
+  .header-info-container {
+    gap: 3.2rem;
+  }
+  .header-info-title {
+    font-size: 32px;
+  }
+  .header-info-text {
+    font-size: 18px;
+  }
+  .header-info-action {
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+  }
+  .header-info-action-primary,
+  .header-info-action-secondary {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 1.8rem auto;
+  }
+  .header-illustration-left {
+    display: block;
+    left: 5rem;
+    top: 25rem;
+    width: 20rem;
+    height: 20rem;
   }
   .header-bottom {
     width: 100%;

@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  transition: all 0.3s ease;
 
   img {
     width: 3.3rem;
@@ -45,6 +46,11 @@
     color: $white;
     margin-top: 0.2rem;
   }
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
 }
 
 .header-nav-list {
@@ -57,11 +63,13 @@
 .header-nav-link {
   color: $white;
   font-size: $semibold-s;
+  font-weight: 600;
   padding: 0.8rem 1.2rem;
+  border-radius: 1rem;
   transition: all 0.3s ease;
 
   &:hover {
-    color: $white-opacity-60;
+    background: $white-opacity-40;
   }
 }
 
@@ -418,6 +426,52 @@
     top: 20rem;
     width: 30rem;
     height: 30rem;
+  }
+
+  .header-bottom {
+    width: 100%;
+    margin-top: 36rem;
+  }
+}
+
+@media (max-width: 392px) and (min-width: 300px) {
+  .header {
+    padding: 2.4rem 2.4rem 9.6rem;
+    gap: 12rem;
+  }
+
+  .header-info-container {
+    gap: 3.2rem;
+  }
+
+  .header-info-title {
+    font-size: $h1-mobile;
+  }
+
+  .header-info-text {
+    font-size: $regular-l;
+  }
+
+  .header-info-action {
+    flex-direction: column;
+    gap: 1.6rem;
+    width: 100%;
+  }
+
+  .header-info-action-primary,
+  .header-info-action-secondary {
+    width: 100%;
+    text-align: center;
+    font-size: $semibold-l;
+    padding: 1.8rem auto;
+  }
+
+  .header-illustration-left {
+    display: block;
+    left: 5rem;
+    top: 25rem;
+    width: 20rem;
+    height: 20rem;
   }
 
   .header-bottom {

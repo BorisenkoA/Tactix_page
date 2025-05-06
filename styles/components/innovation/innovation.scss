@@ -1,0 +1,829 @@
+@use "../../utilites/variables" as *;
+
+.innovation {
+  background: $green-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto auto;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 8.8rem;
+}
+
+.innovation-item-text {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 10rem 20rem 10rem 10rem;
+  border-radius: 4rem;
+  transition: background 0.4s ease-in-out;
+
+  h2 {
+    font-size: $h2-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $black;
+    max-width: 64rem;
+
+    span {
+      color: $green-dark;
+    }
+  }
+
+  p {
+    font-size: $regular-xs;
+    font-weight: 400;
+    line-height: 144%;
+    color: $black-opacity-60;
+    max-width: 36rem;
+  }
+}
+
+.innovation-item-text:hover {
+  cursor: pointer;
+  background: $green-light-2;
+}
+
+.innovation-item-mission {
+  grid-column: span 2;
+  background: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+}
+
+.innovation-item-mission-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+  max-width: 48rem;
+
+  h3 {
+    font-size: $h3-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $white;
+  }
+
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 144%;
+    color: $white-opacity-60;
+  }
+}
+
+.innovation-item-mission-image {
+  padding: 4rem 2.7rem;
+}
+
+.innovation-logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background: $white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+}
+
+.innovation-item-navigation {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: $green-dark;
+}
+
+.innovation-item-navigation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  max-width: 35rem;
+
+  h4 {
+    font-size: $h4-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $white;
+  }
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 144%;
+    color: $white-opacity-60;
+  }
+}
+
+.innovation-item-navigation-image {
+  padding: 3.5rem 2.8rem;
+}
+
+.innovation-item-values {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: $green-light-2;
+}
+
+.innovation-item-values-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  max-width: 35rem;
+
+  h4 {
+    font-size: $h4-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $black;
+  }
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 144%;
+    color: $black-opacity-60;
+  }
+}
+
+.innovation-item-values-image {
+  padding: 4.2rem 2.8rem;
+}
+
+.innovation-item-collaboration {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: $white;
+}
+
+.innovation-item-collaboration-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+  max-width: 48rem;
+
+  h3 {
+    font-size: $h3-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $black;
+  }
+}
+
+.colaboration-logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background: $green-dark;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+}
+
+.innovation-item-collaboration-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.4rem;
+  padding: 3.2rem 0;
+  border-top: 1px solid #2462411A;
+  border-bottom: 1px solid #2462411A;
+}
+
+@media (max-width: 1350px) {
+  .innovation {
+    padding: 1.6rem 18rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 1250px) {
+  .innovation {
+    padding: 1.6rem 14rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+
+  .innovation-item-collaboration-images {
+    gap: 3.8rem;
+    border-top: 1px solid #2462411A;
+    border-bottom: 1px solid #2462411A;
+
+    img {
+      width: 14rem;
+      height: auto;
+    }
+  }
+}
+ 
+@media (max-width: 1050px) {
+  .innovation {
+    padding: 1.6rem 10rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 960px) {
+  .innovation {
+    padding: 1.6rem 6rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+}
+
+@media (max-width: 834px) {
+  .innovation {
+    padding: 1.6rem 4.8rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  .innovation-item-text {
+    padding: 8rem 15rem 8rem 5vw;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+
+  .innovation-item-text {
+    h2 {
+      font-size: $h2-tablet;
+      max-width: 52rem;
+    }
+  }
+
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .innovation-item-mission-text {
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h3-tablet;
+    }
+  }
+
+  .innovation-item-mission-image {
+    padding: 5.8rem 3.8rem;
+
+    img {
+      width: 34rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-image {
+    padding: 5rem 0;
+
+    img {
+      width: 42rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  
+    h4 {
+      font-size: $h4-tablet;
+    }
+  }
+
+  .innovation-item-values-image {
+    padding: 6rem 0;
+
+    img {
+      width: 42rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-values-text {
+    max-width: 40rem;
+  
+    h4 {
+      font-size: $h4-tablet;
+    }
+  }
+
+  .innovation-item-collaboration-text {
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h3-tablet;
+    }
+  }
+
+  .innovation-item-collaboration-images {
+    gap: 3.8rem;
+    border-top: 1px solid #2462411A;
+    border-bottom: 1px solid #2462411A;
+
+    img {
+      width: 12.8rem;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .innovation {
+    padding: 1.6rem 3rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    text-wrap: balance;
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  .innovation-item-text {
+    padding: 8rem 15rem 8rem 5vw;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+
+  .innovation-item-text {
+    h2 {
+      font-size: $h4-desctop;
+    }
+  }
+
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .innovation-item-mission-text {
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h4-desctop;
+    }
+  }
+
+  .innovation-item-mission-image {
+    padding: 5.8rem 3.8rem;
+
+    img {
+      width: 30rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-image {
+    padding: 5rem 0;
+
+    img {
+      width: 35rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  
+    h4 {
+      font-size: $h1-mobile;
+    }
+  }
+
+  .innovation-item-values-image {
+    padding: 6rem 0;
+
+    img {
+      width: 35rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-values-text {
+    max-width: 32rem;
+  
+    h4 {
+      font-size: $h1-mobile;
+    }
+  }
+
+  .innovation-item-collaboration-text {
+    max-width: 25rem;
+  
+    h3 {
+      font-size: $h1-mobile;
+    }
+  }
+
+  .innovation-item-collaboration-images {
+    flex-direction: column;
+    gap: 5rem;
+    border-top: 1px solid #2462411A;
+    border-bottom: 1px solid #2462411A;
+
+    img {
+      width: 11rem;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .innovation {
+    padding: 1.6rem 2.4rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    text-wrap: balance;
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+
+  .innovation-item-text {
+    padding: 8rem 6rem 8rem 5vw;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+
+  .innovation-item-text {
+    h2 {
+      font-size: $h4-desctop;
+    }
+  }
+
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .innovation-item-mission-text {
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h4-desctop;
+    }
+  }
+
+  .innovation-item-mission-image {
+    padding: 4rem 0;
+
+    img {
+      width: 30rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-image {
+    padding: 4rem 0;
+
+    img {
+      width: 32rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  
+    h4 {
+      font-size: $h1-mobile;
+    }
+  }
+
+  .innovation-item-values-image {
+    padding: 5rem 0;
+
+    img {
+      width: 32rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-values-text {
+    max-width: 32rem;
+  
+    h4 {
+      font-size: $h1-mobile;
+    }
+  }
+
+  .innovation-item-collaboration-text {
+    max-width: 25rem;
+  
+    h3 {
+      font-size: $h1-mobile;
+    }
+  }
+
+  .innovation-item-collaboration-images {
+    flex-direction: column;
+    gap: 5rem;
+    border-top: 1px solid #2462411A;
+    border-bottom: 1px solid #2462411A;
+
+    img {
+      width: 11rem;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 393px) {
+  .innovation {
+    padding: 1.6rem 2.4rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    text-wrap: balance;
+  }
+
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 6vw;
+    max-width: 100%;
+  }
+
+  .innovation-item-text {
+    padding: 5.6rem 2.4rem;
+  }
+
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+
+  .innovation-item-text {
+    h2 {
+      font-size: $h2-mobile;
+    }
+  }
+
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .innovation-item-mission-text {
+    max-width: 25rem;
+  
+    h3 {
+      font-size: $h3-mobile;
+    }
+  }
+
+  .innovation-item-mission-image {
+    padding: 4rem 3rem;
+
+    img {
+      width: 24rem;
+      height: auto;
+    }
+  }
+
+  .innovation-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+    padding: 1.6rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .innovation-item-navigation-image {
+    padding: 4rem 0;
+
+    img {
+      width: 29rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  
+    h4 {
+      font-size: $h4-mobile;
+    }
+  }
+
+  .innovation-item-values-image {
+    padding: 4rem 0;
+
+    img {
+      width: 29rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-values-text {
+    max-width: 32rem;
+  
+    h4 {
+      font-size: $h4-mobile;
+      max-width: 23rem;
+    }
+  }
+
+  .innovation-item-collaboration-text {
+    max-width: 25rem;
+  
+    h3 {
+      font-size: $h4-mobile;
+      max-width: 21rem;
+    }
+  }
+
+  .colaboration-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+    padding: 1.6rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .innovation-item-collaboration {
+    gap: 4rem;
+  }
+
+  .innovation-item-collaboration-images {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3.2rem;
+    border-top: 1px solid #2462411A;
+    border-bottom: 1px solid #2462411A;
+    align-self: center;
+
+    img {
+      width: 11rem;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 370px) and (min-width: 300px) {
+  .innovation-item-mission-text {
+
+    h3 {
+      font-size: $h3-mobile;
+    }
+  }
+
+  .innovation-item-mission-image {
+    padding: 4rem 2rem;
+
+    img {
+      width: 18rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-navigation-image {
+    padding: 4rem 0;
+
+    img {
+      width: 22rem;
+      height: auto;
+    }
+  }
+
+  .innovation-item-values-image {
+    padding: 4rem 0;
+
+    img {
+      width: 22rem;
+      height: auto;
+    }
+  }
+}

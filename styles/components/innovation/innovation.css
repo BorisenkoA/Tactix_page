@@ -1,1 +1,693 @@
-/*# sourceMappingURL=innovation.css.map */
+.innovation {
+  background: #C2DECF;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto auto auto;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 8.8rem;
+}
+
+.innovation-item-text {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 10rem 20rem 10rem 10rem;
+  border-radius: 4rem;
+  transition: background 0.4s ease-in-out;
+}
+.innovation-item-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #000000;
+  max-width: 64rem;
+}
+.innovation-item-text h2 span {
+  color: #246241;
+}
+.innovation-item-text p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(0, 0, 0, 0.6);
+  max-width: 36rem;
+}
+
+.innovation-item-text:hover {
+  cursor: pointer;
+  background: #DEF1E7;
+}
+
+.innovation-item-mission {
+  grid-column: span 2;
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+}
+
+.innovation-item-mission-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+  max-width: 48rem;
+}
+.innovation-item-mission-text h3 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #FFFFFF;
+}
+.innovation-item-mission-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.innovation-item-mission-image {
+  padding: 4rem 2.7rem;
+}
+
+.innovation-logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+}
+
+.innovation-item-navigation {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: #246241;
+}
+
+.innovation-item-navigation-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  max-width: 35rem;
+}
+.innovation-item-navigation-text h4 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #FFFFFF;
+}
+.innovation-item-navigation-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.innovation-item-navigation-image {
+  padding: 3.5rem 2.8rem;
+}
+
+.innovation-item-values {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: #DEF1E7;
+}
+
+.innovation-item-values-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  max-width: 35rem;
+}
+.innovation-item-values-text h4 {
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #000000;
+}
+.innovation-item-values-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.innovation-item-values-image {
+  padding: 4.2rem 2.8rem;
+}
+
+.innovation-item-collaboration {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: #FFFFFF;
+}
+
+.innovation-item-collaboration-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+  max-width: 48rem;
+}
+.innovation-item-collaboration-text h3 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #000000;
+}
+
+.colaboration-logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background: #246241;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.8rem;
+}
+
+.innovation-item-collaboration-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6.4rem;
+  padding: 3.2rem 0;
+  border-top: 1px solid rgba(36, 98, 65, 0.1019607843);
+  border-bottom: 1px solid rgba(36, 98, 65, 0.1019607843);
+}
+
+@media (max-width: 1350px) {
+  .innovation {
+    padding: 1.6rem 18rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+}
+@media (max-width: 1250px) {
+  .innovation {
+    padding: 1.6rem 14rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+  .innovation-item-collaboration-images {
+    gap: 3.8rem;
+    border-top: 1px solid rgba(36, 98, 65, 0.1019607843);
+    border-bottom: 1px solid rgba(36, 98, 65, 0.1019607843);
+  }
+  .innovation-item-collaboration-images img {
+    width: 14rem;
+    height: auto;
+  }
+}
+@media (max-width: 1050px) {
+  .innovation {
+    padding: 1.6rem 10rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+}
+@media (max-width: 960px) {
+  .innovation {
+    padding: 1.6rem 6rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+}
+@media (max-width: 834px) {
+  .innovation {
+    padding: 1.6rem 4.8rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  .innovation-item-text {
+    padding: 8rem 15rem 8rem 5vw;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+  .innovation-item-text h2 {
+    font-size: 52px;
+    max-width: 52rem;
+  }
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .innovation-item-mission-text {
+    max-width: 40rem;
+  }
+  .innovation-item-mission-text h3 {
+    font-size: 48px;
+  }
+  .innovation-item-mission-image {
+    padding: 5.8rem 3.8rem;
+  }
+  .innovation-item-mission-image img {
+    width: 34rem;
+    height: auto;
+  }
+  .innovation-item-navigation-image {
+    padding: 5rem 0;
+  }
+  .innovation-item-navigation-image img {
+    width: 42rem;
+    height: auto;
+  }
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  }
+  .innovation-item-navigation-text h4 {
+    font-size: 40px;
+  }
+  .innovation-item-values-image {
+    padding: 6rem 0;
+  }
+  .innovation-item-values-image img {
+    width: 42rem;
+    height: auto;
+  }
+  .innovation-item-values-text {
+    max-width: 40rem;
+  }
+  .innovation-item-values-text h4 {
+    font-size: 40px;
+  }
+  .innovation-item-collaboration-text {
+    max-width: 40rem;
+  }
+  .innovation-item-collaboration-text h3 {
+    font-size: 48px;
+  }
+  .innovation-item-collaboration-images {
+    gap: 3.8rem;
+    border-top: 1px solid rgba(36, 98, 65, 0.1019607843);
+    border-bottom: 1px solid rgba(36, 98, 65, 0.1019607843);
+  }
+  .innovation-item-collaboration-images img {
+    width: 12.8rem;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .innovation {
+    padding: 1.6rem 3rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    text-wrap: balance;
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  .innovation-item-text {
+    padding: 8rem 15rem 8rem 5vw;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+  .innovation-item-text h2 {
+    font-size: 44px;
+  }
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .innovation-item-mission-text {
+    max-width: 40rem;
+  }
+  .innovation-item-mission-text h3 {
+    font-size: 44px;
+  }
+  .innovation-item-mission-image {
+    padding: 5.8rem 3.8rem;
+  }
+  .innovation-item-mission-image img {
+    width: 30rem;
+    height: auto;
+  }
+  .innovation-item-navigation-image {
+    padding: 5rem 0;
+  }
+  .innovation-item-navigation-image img {
+    width: 35rem;
+    height: auto;
+  }
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  }
+  .innovation-item-navigation-text h4 {
+    font-size: 32px;
+  }
+  .innovation-item-values-image {
+    padding: 6rem 0;
+  }
+  .innovation-item-values-image img {
+    width: 35rem;
+    height: auto;
+  }
+  .innovation-item-values-text {
+    max-width: 32rem;
+  }
+  .innovation-item-values-text h4 {
+    font-size: 32px;
+  }
+  .innovation-item-collaboration-text {
+    max-width: 25rem;
+  }
+  .innovation-item-collaboration-text h3 {
+    font-size: 32px;
+  }
+  .innovation-item-collaboration-images {
+    flex-direction: column;
+    gap: 5rem;
+    border-top: 1px solid rgba(36, 98, 65, 0.1019607843);
+    border-bottom: 1px solid rgba(36, 98, 65, 0.1019607843);
+  }
+  .innovation-item-collaboration-images img {
+    width: 11rem;
+    height: auto;
+  }
+}
+@media (max-width: 480px) {
+  .innovation {
+    padding: 1.6rem 2.4rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    text-wrap: balance;
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 5vw;
+    max-width: 100%;
+  }
+  .innovation-item-text {
+    padding: 8rem 6rem 8rem 5vw;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+  .innovation-item-text h2 {
+    font-size: 44px;
+  }
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .innovation-item-mission-text {
+    max-width: 40rem;
+  }
+  .innovation-item-mission-text h3 {
+    font-size: 44px;
+  }
+  .innovation-item-mission-image {
+    padding: 4rem 0;
+  }
+  .innovation-item-mission-image img {
+    width: 30rem;
+    height: auto;
+  }
+  .innovation-item-navigation-image {
+    padding: 4rem 0;
+  }
+  .innovation-item-navigation-image img {
+    width: 32rem;
+    height: auto;
+  }
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  }
+  .innovation-item-navigation-text h4 {
+    font-size: 32px;
+  }
+  .innovation-item-values-image {
+    padding: 5rem 0;
+  }
+  .innovation-item-values-image img {
+    width: 32rem;
+    height: auto;
+  }
+  .innovation-item-values-text {
+    max-width: 32rem;
+  }
+  .innovation-item-values-text h4 {
+    font-size: 32px;
+  }
+  .innovation-item-collaboration-text {
+    max-width: 25rem;
+  }
+  .innovation-item-collaboration-text h3 {
+    font-size: 32px;
+  }
+  .innovation-item-collaboration-images {
+    flex-direction: column;
+    gap: 5rem;
+    border-top: 1px solid rgba(36, 98, 65, 0.1019607843);
+    border-bottom: 1px solid rgba(36, 98, 65, 0.1019607843);
+  }
+  .innovation-item-collaboration-images img {
+    width: 11rem;
+    height: auto;
+  }
+}
+@media (max-width: 393px) {
+  .innovation {
+    padding: 1.6rem 2.4rem 8.8rem;
+    margin: 0 auto;
+    grid-template-columns: minmax(0, 1fr);
+    text-wrap: balance;
+  }
+  .innovation-item-text,
+  .innovation-item-mission,
+  .innovation-item-navigation,
+  .innovation-item-values,
+  .innovation-item-collaboration {
+    grid-column: span 1;
+    padding: 6vw;
+    max-width: 100%;
+  }
+  .innovation-item-text {
+    padding: 5.6rem 2.4rem;
+  }
+  h2, h3, h4, p {
+    max-width: 80vw;
+  }
+  .innovation-item-text h2 {
+    font-size: 30px;
+  }
+  .innovation-item-mission {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .innovation-item-mission-text {
+    max-width: 25rem;
+  }
+  .innovation-item-mission-text h3 {
+    font-size: 28px;
+  }
+  .innovation-item-mission-image {
+    padding: 4rem 3rem;
+  }
+  .innovation-item-mission-image img {
+    width: 24rem;
+    height: auto;
+  }
+  .innovation-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+    padding: 1.6rem;
+  }
+  .innovation-logo img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .innovation-item-navigation-image {
+    padding: 4rem 0;
+  }
+  .innovation-item-navigation-image img {
+    width: 29rem;
+    height: auto;
+  }
+  .innovation-item-navigation-text {
+    max-width: 40rem;
+  }
+  .innovation-item-navigation-text h4 {
+    font-size: 24px;
+  }
+  .innovation-item-values-image {
+    padding: 4rem 0;
+  }
+  .innovation-item-values-image img {
+    width: 29rem;
+    height: auto;
+  }
+  .innovation-item-values-text {
+    max-width: 32rem;
+  }
+  .innovation-item-values-text h4 {
+    font-size: 24px;
+    max-width: 23rem;
+  }
+  .innovation-item-collaboration-text {
+    max-width: 25rem;
+  }
+  .innovation-item-collaboration-text h3 {
+    font-size: 24px;
+    max-width: 21rem;
+  }
+  .colaboration-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+    padding: 1.6rem;
+  }
+  .colaboration-logo img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .innovation-item-collaboration {
+    gap: 4rem;
+  }
+  .innovation-item-collaboration-images {
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3.2rem;
+    border-top: 1px solid rgba(36, 98, 65, 0.1019607843);
+    border-bottom: 1px solid rgba(36, 98, 65, 0.1019607843);
+    align-self: center;
+  }
+  .innovation-item-collaboration-images img {
+    width: 11rem;
+    height: auto;
+  }
+}
+@media (max-width: 370px) and (min-width: 300px) {
+  .innovation-item-mission-text h3 {
+    font-size: 28px;
+  }
+  .innovation-item-mission-image {
+    padding: 4rem 2rem;
+  }
+  .innovation-item-mission-image img {
+    width: 18rem;
+    height: auto;
+  }
+  .innovation-item-navigation-image {
+    padding: 4rem 0;
+  }
+  .innovation-item-navigation-image img {
+    width: 22rem;
+    height: auto;
+  }
+  .innovation-item-values-image {
+    padding: 4rem 0;
+  }
+  .innovation-item-values-image img {
+    width: 22rem;
+    height: auto;
+  }
+}/*# sourceMappingURL=innovation.css.map */

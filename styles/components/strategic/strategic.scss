@@ -1,0 +1,416 @@
+@use "../../utilites/variables" as *;
+
+.strategic {
+  background: $blue-light-1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 9rem;
+}
+
+.strategic-text {
+  grid-column: span 2;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10.4rem;
+  border-radius: 4rem;
+  background: transparent;
+
+  h2 {
+    font-size: $h2-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $black;
+    max-width: 64rem;
+  }
+
+  span {
+    color: $blue-dark;
+  }
+}
+
+.strategic-methodology {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: $blue-dark;
+}
+
+.strategic-workflow {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: $blue-light-2;
+}
+
+.methodology-text,
+.workflow-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+  max-width: 35rem;
+}
+
+.methodology-text h4 {
+  font-size: $h4-desctop;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: $white;
+}
+
+.methodology-text p {
+  font-size: $regular-l;
+  font-weight: 400;
+  line-height: 144%;
+  color: $white-opacity-60;
+}
+
+.methodology-image {
+  padding: 4rem 2.8rem;
+}
+
+.workflow-image {
+  padding: 2.7rem;
+}
+
+.workflow-text h4 {
+  font-size: $h4-desctop;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: $black;
+}
+
+.workflow-text p {
+  font-size: $regular-l;
+  font-weight: 400;
+  line-height: 144%;
+  color: $black-opacity-60;
+}
+
+.strategic-results {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+  border-radius: 4rem;
+  background: $white;
+}
+
+.results-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  padding: 1.8rem;
+  border-radius: 5rem;
+  background: $blue-dark;
+}
+
+.results-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+
+  h3 {
+    font-size: $h3-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $black;
+  }
+
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 144%;
+    color: $black-opacity-60;
+  }
+}
+
+.results-image {
+  padding: 2.4rem 0;
+}
+
+@media (max-width: 1240px) and (min-width: 600px) {
+  .strategic {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+
+  .strategic-methodology,
+  .strategic-workflow {
+    grid-column: span 2;
+  }
+
+  .strategic-text {
+    padding: 8rem 6.4rem;
+
+    h2 {
+      font-size: $h2-tablet;
+      max-width: 40rem;
+    }
+  }
+
+  .methodology-text h4,
+  .workflow-text h4 {
+    font-size: $h4-tablet;
+  }
+  
+  .methodology-image,
+  .workflow-image {
+    padding: 5.8rem 0;
+
+    img {
+      width: 42rem;
+    }
+  }
+
+  .strategic-results {
+    flex-direction: column;
+    align-items: start;
+    gap: 3.2rem;
+    padding: 6.4rem 5.6rem
+  }
+
+  .results-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.4rem;
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h3-tablet;
+    }
+  }
+  
+  .results-image {
+    padding: 3.4rem 0;
+
+    img {
+      width: 42rem;
+    }
+  }
+}
+
+@media (max-width: 600px) and (min-width: 500px) {
+  .strategic {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+
+  .strategic-methodology,
+  .strategic-workflow {
+    grid-column: span 2;
+  }
+
+  .strategic-text {
+    padding: 8rem 6.4rem;
+
+    h2 {
+      font-size: $h2-tablet;
+      max-width: 40rem;
+    }
+  }
+
+  .methodology-text h4,
+  .workflow-text h4 {
+    font-size: $h4-tablet;
+  }
+  
+  .methodology-image,
+  .workflow-image {
+    img {
+      width: 29rem;
+    }
+  }
+
+  .strategic-results {
+    flex-direction: column;
+    align-items: start;
+    gap: 3.2rem;
+    padding: 6.4rem 5.6rem
+  }
+
+  .results-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.4rem;
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h3-tablet;
+    }
+  }
+  
+  .results-image {
+    padding: 3.4rem 0;
+
+    img {
+      width: 29rem;
+    }
+  }
+}
+
+@media (max-width: 500px) and (min-width: 393px) {
+  .strategic {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .strategic-methodology,
+  .strategic-workflow {
+    grid-column: span 2;
+  }
+
+  .strategic-text {
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      font-size: $h2-mobile;
+      max-width: 25rem;
+    }
+  }
+
+  .methodology-text h4,
+  .workflow-text h4 {
+    font-size: $h4-mobile;
+    max-width: 20rem;
+  }
+  
+  .methodology-image,
+  .workflow-image {
+    img {
+      width: 29rem;
+    }
+  }
+
+  .methodology-image {
+    padding: 4.2rem 0;
+  }
+
+  .workflow-image {
+    padding: 2.4rem 0;
+  }
+
+  .strategic-methodology,
+  .strategic-workflow,
+  .strategic-results {
+    flex-direction: column;
+    align-items: start;
+    gap: 3.2rem;
+    padding: 4rem 2.4rem
+  }
+
+  .results-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.4rem;
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h3-mobile;
+    }
+  }
+  
+  .results-image {
+    padding: 3.4rem 0;
+
+    img {
+      width: 29rem;
+    }
+  }
+}
+
+@media (max-width: 392px) and (min-width: 300px) {
+  .strategic {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .strategic-methodology,
+  .strategic-workflow {
+    grid-column: span 2;
+  }
+
+  .strategic-text {
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      font-size: $h2-mobile;
+      max-width: 25rem;
+    }
+  }
+
+  .methodology-text h4,
+  .workflow-text h4 {
+    font-size: $h4-mobile;
+    max-width: 20rem;
+  }
+  
+  .methodology-image,
+  .workflow-image,
+  .results-image {
+    img {
+      width: 20rem;
+    }
+  }
+
+  .methodology-image {
+    padding: 4.2rem 0;
+  }
+
+  .workflow-image {
+    padding: 2.4rem 0;
+  }
+
+  .strategic-methodology,
+  .strategic-workflow,
+  .strategic-results {
+    flex-direction: column;
+    align-items: start;
+    gap: 3.2rem;
+    padding: 4rem 2.4rem
+  }
+
+  .results-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2.4rem;
+    max-width: 40rem;
+  
+    h3 {
+      font-size: $h3-mobile;
+    }
+  }
+  
+  .results-image {
+    padding: 3.4rem 0;
+  }
+}

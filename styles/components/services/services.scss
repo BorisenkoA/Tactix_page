@@ -1,0 +1,323 @@
+@use "../../utilites/variables" as *;
+
+.services {
+  background: $yellow-light;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 9rem;
+}
+
+.services-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10.04rem;
+
+  h2 {
+    font-size: $h2-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $black;
+    max-width: 60rem;
+  }
+
+  span {
+    color: $yellow-dark
+  }
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.services-list-item {
+  flex: 0 1 calc(50% - 0.8rem);
+  max-width: 46.4rem;
+  background: #fff;
+  padding: 5.6rem 5.6rem 6.4rem 5.6rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.services-list-icon-container {
+  width: 6.8rem;
+  height: 6.8rem;
+  border-radius: 10rem;
+  background: $yellow-dark;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 4.4rem;
+}
+
+.services-list-heading {
+  max-width: 24rem;
+  font-size: $h5-desctop;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: $black;
+}
+
+.services-list-describe {
+  font-size: $regular-l;
+  font-weight: 400;
+  line-height: 144%;
+  color: $black-opacity-60;
+}
+
+.services-care {
+  background: $black;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+}
+
+.services-care-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+
+  h3 {
+    font-size: $h3-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $white;
+  }
+
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 144%;
+    color: $white-opacity-60;
+  }
+}
+
+.care-logo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .services {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+
+  .services-list-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .services-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 8rem 6.4rem;
+  
+    h2 {
+      font-size: $h2-tablet;
+      max-width: 50rem;
+    }
+  }
+
+  .services-list-heading {
+    font-size: $h5-tablet;
+  }
+
+  .services-list-describe {
+    max-width: 44rem;
+  }
+
+  .services-care {
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+    padding: 6.4rem 5.6rem;
+  }
+
+  .services-care-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+  
+    h3 {
+      font-size: $h3-tablet;
+    }
+  }
+
+  .services-care-image {
+    padding: 5.5rem 0;
+
+    img {
+      width: 42rem;
+    }
+  }
+}
+
+@media (max-width: 834px) and (min-width: 393px) {
+  .services {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .services-list-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 4rem 2.4rem;
+  }
+
+  .services-list-icon-container {
+    margin-bottom: 2.8rem;
+  }
+
+  .services-text {
+    padding: 5.6rem 2.4rem;
+  
+    h2 {
+      font-size: $h2-mobile;
+      max-width: 27rem;
+    }
+  }
+
+  .services-list-heading {
+    font-size: $h5-mobile;
+    max-width: 20rem;
+  }
+
+  .services-list-describe {
+    max-width: 29rem;
+  }
+
+  .services-care {
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+    padding: 4rem 2.4rem;
+  }
+
+  .care-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .services-care-text {
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+  
+    h3 {
+      font-size: $h3-mobile;
+      max-width: 20rem;
+    }
+
+    p {
+      letter-spacing: -0.05rem;
+    }
+  }
+
+  .services-care-image {
+    padding: 4rem 0;
+
+    img {
+      width: 27rem;
+    }
+  }
+}
+
+@media (max-width: 393px) and (min-width: 300px) {
+  .services {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .services-list-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 4rem 2.4rem;
+  }
+
+  .services-list-icon-container {
+    margin-bottom: 2.8rem;
+  }
+
+  .services-text {
+    padding: 5.6rem 2.4rem;
+  
+    h2 {
+      font-size: $h4-mobile;
+      max-width: 20rem;
+    }
+  }
+
+  .services-list-heading {
+    font-size: $h5-mobile;
+    max-width: 20rem;
+  }
+
+  .services-list-describe {
+    max-width: 100%;
+  }
+
+  .services-care {
+    flex-direction: column;
+    align-items: start;
+    gap: 4rem;
+    padding: 4rem 2.4rem;
+  }
+
+  .care-logo {
+    width: 5.2rem;
+    height: 5.2rem;
+  }
+
+  .services-care-text {
+    max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+  
+    h3 {
+      font-size: $h3-mobile;
+      max-width: 20rem;
+    }
+
+    p {
+      letter-spacing: -0.05rem;
+    }
+  }
+
+  .services-care-image {
+    padding: 4rem 0;
+
+    img {
+      width: 20rem;
+    }
+  }
+}
