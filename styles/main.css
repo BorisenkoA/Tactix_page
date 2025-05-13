@@ -2072,4 +2072,289 @@ button, a {
   .results-image {
     padding: 3.4rem 0;
   }
+}
+.clients {
+  background: #000000;
+  display: grid;
+  grid-column: 1fr;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 9rem;
+  position: relative;
+  z-index: 1;
+}
+
+.clients::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 52rem;
+  background-image: url("../../images/gradient.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.clients-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 1.6rem;
+}
+
+.clients-text {
+  display: flex;
+  padding: 10.4rem;
+}
+.clients-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -1.6%;
+  color: #FFFFFF;
+  max-width: 60rem;
+}
+.clients-text span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.clients-left,
+.clients-right {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.clients-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1.6rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4rem;
+  padding: 4.8rem 4rem;
+}
+
+.clients-person {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.clients-person-image {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 10rem;
+  background: #C2DECF;
+}
+
+.clients-person-name {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 144%;
+  letter-spacing: -1%;
+  color: #FFFFFF;
+}
+
+.clients-person-position {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 144%;
+  letter-spacing: -0.5%;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.clients-item-about {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  letter-spacing: -0.5%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .clients {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+  .clients-text {
+    display: flex;
+    padding: 8rem 6.4rem;
+  }
+  .clients-text h2 {
+    font-size: 52px;
+    max-width: 50rem;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .clients {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .clients::after {
+    height: 28rem;
+  }
+  .clients-text {
+    display: flex;
+    padding: 5.6rem 2.4rem;
+  }
+  .clients-text h2 {
+    font-size: 30px;
+    max-width: 30rem;
+  }
+  .clients-right {
+    display: none;
+  }
+  .clients-item {
+    padding: 3.2rem 2.4rem;
+  }
+}
+@media (max-width: 393px) and (min-width: 300px) {
+  .clients {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .clients::after {
+    height: 20rem;
+  }
+  .clients-text {
+    display: flex;
+    padding: 3rem 1.4rem;
+  }
+  .clients-text h2 {
+    font-size: 24px;
+    max-width: 20rem;
+  }
+  .clients-right {
+    display: none;
+  }
+  .clients-item {
+    padding: 2.2rem 1.4rem;
+  }
+  .clients-person-image {
+    width: 3rem;
+    height: 3rem;
+  }
+  .clients-person-name {
+    font-size: 14px;
+  }
+  .clients-person-position {
+    font-size: 12px;
+  }
+  .clients-item-about {
+    font-size: 14px;
+  }
+}
+.metrics {
+  background: #000000;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 9rem;
+}
+
+.metrics-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10.04rem;
+}
+.metrics-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #FFFFFF;
+  max-width: 60rem;
+}
+.metrics-text span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.metrics-brand {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+}
+
+.metrics-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+.metrics-brand-text h3 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #FFFFFF;
+}
+.metrics-brand-text p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.metrics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.metrics-list-item {
+  flex: 0 1 calc(50% - 0.8rem);
+  max-width: 46.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 5.6rem 5.6rem 6.4rem 5.6rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.metrics-list-metric {
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: #2FE784;
+  padding-bottom: 3.2rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.08);
+}
+
+.metrics-list-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+.metrics-list-text-container h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 144%;
+  color: #FFFFFF;
+}
+.metrics-list-text-container p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.metrics-brand-image {
+  padding: 3.9rem 0;
 }/*# sourceMappingURL=main.css.map */

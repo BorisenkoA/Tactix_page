@@ -1,0 +1,117 @@
+@use "../../utilites/variables" as *;
+
+.metrics {
+  background: $black;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 9rem;
+}
+
+.metrics-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10.04rem;
+
+  h2 {
+    font-size: $h2-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $white;
+    max-width: 60rem;
+  }
+
+  span {
+    color: $white-opacity-60;
+  }
+}
+
+.metrics-brand {
+  background: $white-opacity-8;
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 6.4rem 5.6rem;
+}
+
+.metrics-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2.4rem;
+
+  h3 {
+    font-size: $h3-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: $white;
+  }
+
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 140%;
+    color: $white-opacity-60;
+  }
+}
+
+.metrics-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.6rem;
+}
+
+.metrics-list-item {
+  flex: 0 1 calc(50% - 0.8rem);
+  max-width: 46.4rem;
+  background: $white-opacity-8;
+  padding: 5.6rem 5.6rem 6.4rem 5.6rem;
+  border-radius: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.metrics-list-metric {
+  font-size: $large-heading-desctop;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -0.2rem;
+  color: $accent;
+  padding-bottom: 3.2rem;
+  border-bottom: 0.1rem solid $white-opacity-8;
+}
+
+.metrics-list-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.8rem;
+
+  h3 {
+    font-size: $semibold-l;
+    font-weight: 600;
+    line-height: 144%;
+    color: $white;
+  }
+  p {
+    font-size: $regular-l;
+    font-weight: 400;
+    line-height: 144%;
+    color: $white-opacity-60;
+  }
+}
+
+.metrics-brand-image {
+  padding: 3.9rem 0;
+}
