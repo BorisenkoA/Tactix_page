@@ -7,14 +7,26 @@
   gap: 1.6rem;
   margin: 0 auto;
   padding: 1.6rem 24rem 9rem;
-  color: $white;
 }
 
 .questions-text {
   display: flex;
   justify-content: start;
   align-items: center;
-  padding: 10.04rem;  
+  padding: 10.04rem;
+
+  h2 {
+    font-size: $h2-desctop;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -1.6%;
+    color: $white;
+    max-width: 64rem;
+  }
+
+  span {
+    color: $white-opacity-60;
+  }
 }
 
 .questions-container {
@@ -42,23 +54,6 @@
   gap: 1.6rem;
 }
 
-.questions-text {
-  padding: 10.04rem;
-
-  h2 {
-    font-size: $h2-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -1.6%;
-    color: $white;
-    max-width: 64rem;
-  }
-
-  span {
-    color: $white-opacity-60;
-  }
-}
-
 .questions-item-question {
   display: flex;
   justify-content: space-between;
@@ -69,6 +64,7 @@
     font-size: $semibold-l;
     font-weight: 600;
     line-height: 144%;
+    color: $white;
   }
 }
 

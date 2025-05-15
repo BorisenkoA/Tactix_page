@@ -321,6 +321,7 @@ button, a {
 
 .header-nav-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -331,6 +332,7 @@ button, a {
 
 .header-left {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 7.2rem;
@@ -338,6 +340,7 @@ button, a {
 
 .header-logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   transition: all 0.3s ease;
@@ -347,9 +350,9 @@ button, a {
   height: 3.3rem;
 }
 .header-logo p {
+  font-family: "Clash Display";
   font-size: 2rem;
   font-weight: 500;
-  font-family: "Clash Display", sans-serif;
   color: #FFFFFF;
   margin-top: 0.2rem;
 }
@@ -360,15 +363,16 @@ button, a {
 
 .header-nav-list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 0.8rem;
 }
 
 .header-nav-link {
-  color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
+  color: #FFFFFF;
   padding: 0.8rem 1.2rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
@@ -382,12 +386,13 @@ button, a {
   padding: 1.2rem 2.2rem;
   border-radius: 10rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
+  color: #FFFFFF;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
@@ -410,16 +415,17 @@ button, a {
   border-radius: 10rem;
   padding: 1.2rem 2.2rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .header-info-button a {
-  color: #2FE784;
   font-size: 14px;
   font-weight: 600;
   line-height: 144%;
+  color: #2FE784;
 }
 .header-info-button:hover {
   background: rgba(47, 231, 132, 0.18);
@@ -434,26 +440,27 @@ button, a {
 }
 
 .header-info-title {
-  color: #FFFFFF;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-size: 72px;
   font-weight: 600;
   line-height: 112%;
+  color: #FFFFFF;
   text-wrap: balance;
   text-align: center;
 }
 
 .header-info-text {
   max-width: 75rem;
-  color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
   line-height: 144%;
+  color: #FFFFFF;
   text-align: center;
 }
 
 .header-info-action {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1.6rem;
@@ -465,10 +472,10 @@ button, a {
   background: #2FE784;
   padding: 1.8rem 3.2rem;
   border-radius: 10rem;
-  color: #000000;
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
+  color: #000000;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -481,10 +488,10 @@ button, a {
   padding: 1.8rem 3.2rem;
   border-radius: 10rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #FFFFFF;
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
+  color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -515,10 +522,10 @@ button, a {
 }
 
 .header-bottom {
-  color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   font-weight: 400;
   line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
 
@@ -2312,7 +2319,6 @@ button, a {
 
 .metrics-list-item {
   flex: 0 1 calc(50% - 0.8rem);
-  max-width: 46.4rem;
   background: rgba(255, 255, 255, 0.08);
   padding: 5.6rem 5.6rem 6.4rem 5.6rem;
   border-radius: 4rem;
@@ -2363,7 +2369,6 @@ button, a {
   gap: 1.6rem;
   margin: 0 auto;
   padding: 1.6rem 24rem 9rem;
-  color: #FFFFFF;
 }
 
 .questions-text {
@@ -2371,6 +2376,17 @@ button, a {
   justify-content: start;
   align-items: center;
   padding: 10.04rem;
+}
+.questions-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -1.6%;
+  color: #FFFFFF;
+  max-width: 64rem;
+}
+.questions-text span {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .questions-container {
@@ -2398,21 +2414,6 @@ button, a {
   gap: 1.6rem;
 }
 
-.questions-text {
-  padding: 10.04rem;
-}
-.questions-text h2 {
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 104%;
-  letter-spacing: -1.6%;
-  color: #FFFFFF;
-  max-width: 64rem;
-}
-.questions-text span {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .questions-item-question {
   display: flex;
   justify-content: space-between;
@@ -2423,6 +2424,7 @@ button, a {
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
+  color: #FFFFFF;
 }
 
 .questions-item-arrow {
@@ -2452,6 +2454,220 @@ button, a {
 
 .questions-item-arrow img {
   transition: transform 0.3s ease;
+}
+
+.contact {
+  background: #000000;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.6rem;
+  margin: 0 auto;
+  padding: 1.6rem 24rem 9rem;
+}
+
+.contact-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 10.04rem;
+}
+.contact-text h2 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -1.6%;
+  color: #FFFFFF;
+  max-width: 64rem;
+}
+.contact-text span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.contact-form {
+  display: flex;
+  align-items: stretch;
+  gap: 1.6rem;
+  min-height: 54.9rem;
+}
+
+.contact-email,
+.contact-booking {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 5.6rem 5.6rem 6.4rem 5.6rem;
+}
+.contact-email h5,
+.contact-booking h5 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -1.6%;
+  color: #FFFFFF;
+}
+.contact-email span,
+.contact-booking span {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  padding: 5.6rem 5.6rem 6.4rem 5.6rem;
+  background: #FFFFFF;
+  border-radius: 4rem;
+  width: 50%;
+  height: 100%;
+}
+
+.contact-form img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4rem;
+}
+
+.form-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.2rem;
+  width: 100%;
+}
+.form-info h5 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 104%;
+  letter-spacing: -1.6%;
+  color: #000000;
+}
+.form-info p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  letter-spacing: -0.5%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+input {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 1.2rem;
+  outline: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 144%;
+  letter-spacing: -0.5%;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+  border: 0.15rem solid #C0DDFF;
+  box-shadow: 0 0 0.8rem #2FE784;
+  transition: all 0.3s ease;
+}
+
+.form-button {
+  background: #2FE784;
+  border-radius: 10rem;
+  padding: 1.8rem 3.2rem;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 144%;
+  letter-spacing: -1%;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.form-button:hover {
+  background: #4DFFA2;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 10.04rem 24rem 6.4rem 24rem;
+  background-color: #000000;
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.footer-logo p {
+  font-size: 2rem;
+  font-family: "Clash Display";
+  font-weight: 500;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: -0.5rem;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-nav-list a {
+  padding: 1.2rem;
+}
+.footer-nav-list img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-rights {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-rights p, .footer-rights a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*# sourceMappingURL=main.css.map */

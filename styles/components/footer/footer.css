@@ -1,0 +1,58 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 10.04rem 24rem 6.4rem 24rem;
+  background-color: #000000;
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+.footer-logo p {
+  font-size: 2rem;
+  font-family: "Clash Display";
+  font-weight: 500;
+  line-height: 100%;
+  color: #FFFFFF;
+  margin-bottom: -0.5rem;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-nav-list a {
+  padding: 1.2rem;
+}
+.footer-nav-list img {
+  display: block;
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer-rights {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-rights p, .footer-rights a {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
+}/*# sourceMappingURL=footer.css.map */
