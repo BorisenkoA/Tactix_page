@@ -1,4 +1,5 @@
 @use "../../utilites/variables" as *;
+@use "../../utilites/mixins" as *;
 
 .strategic {
   background: $blue-light-1;
@@ -12,9 +13,7 @@
 
 .strategic-text {
   grid-column: span 2;
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include flex(row, start, center, null);
   padding: 10.4rem;
   border-radius: 4rem;
   background: transparent;
@@ -35,11 +34,7 @@
 
 .strategic-methodology {
   grid-column: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
+  @include flex(column, space-between, flex-start, 4rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
   background: $blue-dark;
@@ -47,11 +42,7 @@
 
 .strategic-workflow {
   grid-column: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
+  @include flex(column, space-between, flex-start, 4rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
   background: $blue-light-2;
@@ -59,27 +50,16 @@
 
 .methodology-text,
 .workflow-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.6rem;
+  @include flex(column, space-between, flex-start, 1.6rem);
   max-width: 35rem;
 }
 
 .methodology-text h4 {
-  font-size: $h4-desctop;
-  font-weight: 600;
-  line-height: 104%;
-  letter-spacing: -0.2rem;
-  color: $white;
+  @include font(null, $h4-desctop, 600, 104%, -0.2rem, $white);
 }
 
 .methodology-text p {
-  font-size: $regular-l;
-  font-weight: 400;
-  line-height: 144%;
-  color: $white-opacity-60;
+  @include font(null, $regular-l, 400, 144%, null, $white-opacity-60);
 }
 
 .methodology-image {
@@ -91,35 +71,23 @@
 }
 
 .workflow-text h4 {
-  font-size: $h4-desctop;
-  font-weight: 600;
-  line-height: 104%;
-  letter-spacing: -0.2rem;
-  color: $black;
+  @include font(null, $h4-desctop, 600, 104%, -0.2rem, $black);
 }
 
 .workflow-text p {
-  font-size: $regular-l;
-  font-weight: 400;
-  line-height: 144%;
-  color: $black-opacity-60;
+  @include font(null, $regular-l, 400, 144%, null, $black-opacity-60);
 }
 
 .strategic-results {
   grid-column: span 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5.6rem;
+  @include flex(row, space-between, center, 5.6rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
   background: $white;
 }
 
 .results-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, null);
   width: 6rem;
   height: 6rem;
   padding: 1.8rem;
@@ -128,25 +96,14 @@
 }
 
 .results-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.4rem;
+  @include flex(column, space-between, flex-start, 2.4rem);
 
   h3 {
-    font-size: $h3-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $black;
+    @include font(null, $h3-desctop, 600, 104%, -0.2rem, $black);
   }
 
   p {
-    font-size: $regular-l;
-    font-weight: 400;
-    line-height: 144%;
-    color: $black-opacity-60;
+    @include font(null, $regular-l, 400, 144%, null, $black-opacity-60);
   }
 }
 
@@ -188,18 +145,12 @@
   }
 
   .strategic-results {
-    flex-direction: column;
-    align-items: start;
-    gap: 3.2rem;
+    @include flex(column, null, start, 3.2rem);
     padding: 6.4rem 5.6rem
   }
 
   .results-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 2.4rem;
+    @include flex(column, space-between, start, 2.4rem);
     max-width: 40rem;
   
     h3 {
@@ -248,18 +199,12 @@
   }
 
   .strategic-results {
-    flex-direction: column;
-    align-items: start;
-    gap: 3.2rem;
+    @include flex(column, null, start, 3.2rem);
     padding: 6.4rem 5.6rem
   }
 
   .results-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 2.4rem;
+    @include flex(column, space-between, start, 2.4rem);
     max-width: 40rem;
   
     h3 {
@@ -319,18 +264,12 @@
   .strategic-methodology,
   .strategic-workflow,
   .strategic-results {
-    flex-direction: column;
-    align-items: start;
-    gap: 3.2rem;
+    @include flex(column, null, start, 3.2rem);
     padding: 4rem 2.4rem
   }
 
   .results-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 2.4rem;
+    @include flex(column, space-between, start, 2.4rem);
     max-width: 40rem;
   
     h3 {
@@ -391,18 +330,12 @@
   .strategic-methodology,
   .strategic-workflow,
   .strategic-results {
-    flex-direction: column;
-    align-items: start;
-    gap: 3.2rem;
+    @include flex(column, null, start, 3.2rem);
     padding: 4rem 2.4rem
   }
 
   .results-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-    gap: 2.4rem;
+    @include flex(column, space-between, start, 2.4rem);
     max-width: 40rem;
   
     h3 {

@@ -9,6 +9,7 @@
 
 .metrics-text {
   display: flex;
+  flex-direction: row;
   justify-content: start;
   align-items: center;
   padding: 10.04rem;
@@ -29,6 +30,7 @@
   background: rgba(255, 255, 255, 0.08);
   border-radius: 4rem;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 5.6rem;
@@ -58,9 +60,10 @@
 
 .metrics-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
   gap: 1.6rem;
+  flex-wrap: wrap;
 }
 
 .metrics-list-item {

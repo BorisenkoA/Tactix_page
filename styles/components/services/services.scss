@@ -1,4 +1,5 @@
 @use "../../utilites/variables" as *;
+@use "../../utilites/mixins" as *;
 
 .services {
   background: $yellow-light;
@@ -10,17 +11,11 @@
 }
 
 .services-text {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include flex(row, start, center, null);
   padding: 10.04rem;
 
   h2 {
-    font-size: $h2-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $black;
+    @include font(null, $h2-desctop, 600, 104%, -0.2rem, $black);
     max-width: 60rem;
   }
 
@@ -30,10 +25,8 @@
 }
 
 .services-list {
-  display: flex;
+  @include flex(row, space-between, null, 1.6rem);
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1.6rem;
 }
 
 .services-list-item {
@@ -42,10 +35,7 @@
   background: #fff;
   padding: 5.6rem 5.6rem 6.4rem 5.6rem;
   border-radius: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 1.2rem;
+  @include flex(column, space-between, null, 1.2rem);
 }
 
 .services-list-icon-container {
@@ -53,59 +43,36 @@
   height: 6.8rem;
   border-radius: 10rem;
   background: $yellow-dark;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, null);
   padding: 2rem;
   margin-bottom: 4.4rem;
 }
 
 .services-list-heading {
   max-width: 24rem;
-  font-size: $h5-desctop;
-  font-weight: 600;
-  line-height: 104%;
-  letter-spacing: -0.2rem;
-  color: $black;
+  @include font(null, $h5-desctop, 600, 104%, -0.2rem, $black);
 }
 
 .services-list-describe {
-  font-size: $regular-l;
-  font-weight: 400;
-  line-height: 144%;
-  color: $black-opacity-60;
+  @include font(null, $regular-l, 400, 144%, null, $black-opacity-60);
 }
 
 .services-care {
   background: $black;
   border-radius: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5.6rem;
+  @include flex(row, space-between, center, 5.6rem);
   padding: 6.4rem 5.6rem;
 }
 
 .services-care-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.4rem;
+  @include flex(column, space-between, flex-start, 2.4rem);
 
   h3 {
-    font-size: $h3-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $white;
+    @include font(null, $h3-desctop, 600, 104%, -0.2rem, $white);
   }
 
   p {
-    font-size: $regular-l;
-    font-weight: 400;
-    line-height: 144%;
-    color: $white-opacity-60;
+    @include font(null, $regular-l, 400, 144%, null, $white-opacity-60);
   }
 }
 
@@ -114,9 +81,7 @@
   height: 6rem;
   border-radius: 10rem;
   background: $white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, null);
   padding: 2rem;
 }
 
@@ -131,9 +96,7 @@
   }
 
   .services-text {
-    display: flex;
-    justify-content: start;
-    align-items: center;
+    @include flex(row, start, center, null);
     padding: 8rem 6.4rem;
   
     h2 {
@@ -151,18 +114,12 @@
   }
 
   .services-care {
-    flex-direction: column;
-    align-items: start;
-    gap: 4rem;
+    @include flex(column, null, start, 4rem);
     padding: 6.4rem 5.6rem;
   }
 
   .services-care-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2.4rem;
+    @include flex(column, space-between, flex-start, 2.4rem);
   
     h3 {
       font-size: $h3-tablet;
@@ -212,9 +169,7 @@
   }
 
   .services-care {
-    flex-direction: column;
-    align-items: start;
-    gap: 4rem;
+    @include flex(column, null, start, 4rem);
     padding: 4rem 2.4rem;
   }
 
@@ -225,11 +180,7 @@
 
   .services-care-text {
     max-width: 32rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2.4rem;
+    @include flex(column, space-between, flex-start, 2.4rem);
   
     h3 {
       font-size: $h3-mobile;
@@ -284,9 +235,7 @@
   }
 
   .services-care {
-    flex-direction: column;
-    align-items: start;
-    gap: 4rem;
+    @include flex(column, null, start, 4rem);
     padding: 4rem 2.4rem;
   }
 
@@ -297,11 +246,7 @@
 
   .services-care-text {
     max-width: 32rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 2.4rem;
+    @include flex(column, space-between, flex-start, 2.4rem);
   
     h3 {
       font-size: $h3-mobile;

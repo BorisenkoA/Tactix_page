@@ -275,6 +275,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0;
 }
 
 .header-burger-button {
@@ -334,9 +335,11 @@
 
 .header-button {
   background: rgba(255, 255, 255, 0.08);
-  padding: 1.2rem 2.2rem;
-  border-radius: 10rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10rem;
+  padding: 1.2rem 2.2rem;
+  color: #FFFFFF;
+  cursor: pointer;
   font-size: 14px;
   font-weight: 600;
   color: #FFFFFF;
@@ -344,10 +347,10 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
-  cursor: pointer;
 }
 .header-button:hover {
   background: rgba(255, 255, 255, 0.4);
@@ -365,11 +368,11 @@
   background: rgba(47, 231, 132, 0.12);
   border-radius: 10rem;
   padding: 1.2rem 2.2rem;
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.8rem;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 .header-info-button a {
@@ -421,13 +424,13 @@
 
 .header-info-action-primary {
   background: #2FE784;
-  padding: 1.8rem 3.2rem;
   border-radius: 10rem;
+  padding: 1.8rem 3.2rem;
+  cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
   color: #000000;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 .header-info-action-primary:hover {
@@ -436,14 +439,14 @@
 
 .header-info-action-secondary {
   background: rgba(255, 255, 255, 0.08);
-  padding: 1.8rem 3.2rem;
-  border-radius: 10rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10rem;
+  padding: 1.8rem 3.2rem;
+  cursor: pointer;
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
   color: #FFFFFF;
-  cursor: pointer;
   transition: all 0.3s ease;
 }
 .header-info-action-secondary:hover {
@@ -494,19 +497,21 @@
   }
   .header-right {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 1.6rem;
   }
   .header-burger-button {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    padding: 1.05rem;
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 10rem;
     border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10rem;
+    padding: 1.05rem;
+    cursor: pointer;
   }
   .header-button {
     display: none;
@@ -519,13 +524,14 @@
   }
   .header-burger-button {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-    padding: 1.05rem;
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 10rem;
     border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10rem;
+    padding: 1.05rem;
+    cursor: pointer;
   }
   .header-info-title {
     font-size: 56px;

@@ -1,4 +1,5 @@
 @use "../../utilites/variables" as *;
+@use "../../utilites/mixins" as *;
 
 .questions {
   background: $black;
@@ -10,17 +11,11 @@
 }
 
 .questions-text {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include flex(row, start, center, null);
   padding: 10.04rem;
 
   h2 {
-    font-size: $h2-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -1.6%;
-    color: $white;
+    @include font(null, $h2-desctop, 600, 104%, -1.6rem, $white);
     max-width: 64rem;
   }
 
@@ -30,19 +25,12 @@
 }
 
 .questions-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 1.6rem;
+  @include flex(column, center, center, 1.6rem);
 }
 
 .questions-item {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 0;
+  @include flex(column, space-between, null, 0);
   padding: 2.8rem 4rem;
   background: $white-opacity-8;
   border-radius: 4rem;
@@ -55,23 +43,15 @@
 }
 
 .questions-item-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 4rem;
+  @include flex(row, space-between, center, 4rem);
 
   h3 {
-    font-size: $semibold-l;
-    font-weight: 600;
-    line-height: 144%;
-    color: $white;
+    @include font(null, $semibold-l, 600, 144%, null, $white);
   }
 }
 
 .questions-item-arrow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, null);
   width: 4.4rem;
   height: 4.4rem;
   padding: 1.4rem;
@@ -81,16 +61,12 @@
 }
 
 .questions-item-answer {
+  @include font(null, $regular-l, 400, 144%, -0.5%, $white-opacity-60);
   max-height: 0;
   overflow: hidden;
   max-width: 72rem;
-  font-size: $regular-l;
-  font-weight: 400;
-  line-height: 144%;
-  letter-spacing: -0.5%;
-  color: $white-opacity-60;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
   opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
 }
 
 .questions-item-arrow img {

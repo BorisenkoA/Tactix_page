@@ -272,6 +272,7 @@
 
 .header-nav-container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -282,6 +283,7 @@
 
 .header-left {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 7.2rem;
@@ -289,6 +291,7 @@
 
 .header-logo {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   transition: all 0.3s ease;
@@ -298,9 +301,9 @@
   height: 3.3rem;
 }
 .header-logo p {
+  font-family: "Clash Display";
   font-size: 2rem;
   font-weight: 500;
-  font-family: "Clash Display", sans-serif;
   color: #FFFFFF;
   margin-top: 0.2rem;
 }
@@ -311,15 +314,16 @@
 
 .header-nav-list {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 0.8rem;
 }
 
 .header-nav-link {
-  color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
+  color: #FFFFFF;
   padding: 0.8rem 1.2rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
@@ -333,12 +337,13 @@
   padding: 1.2rem 2.2rem;
   border-radius: 10rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #FFFFFF;
   font-size: 14px;
   font-weight: 600;
+  color: #FFFFFF;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
@@ -361,16 +366,17 @@
   border-radius: 10rem;
   padding: 1.2rem 2.2rem;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 0.8rem;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .header-info-button a {
-  color: #2FE784;
   font-size: 14px;
   font-weight: 600;
   line-height: 144%;
+  color: #2FE784;
 }
 .header-info-button:hover {
   background: rgba(47, 231, 132, 0.18);
@@ -385,26 +391,27 @@
 }
 
 .header-info-title {
-  color: #FFFFFF;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-size: 72px;
   font-weight: 600;
   line-height: 112%;
+  color: #FFFFFF;
   text-wrap: balance;
   text-align: center;
 }
 
 .header-info-text {
   max-width: 75rem;
-  color: #FFFFFF;
   font-size: 18px;
   font-weight: 400;
   line-height: 144%;
+  color: #FFFFFF;
   text-align: center;
 }
 
 .header-info-action {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1.6rem;
@@ -416,10 +423,10 @@
   background: #2FE784;
   padding: 1.8rem 3.2rem;
   border-radius: 10rem;
-  color: #000000;
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
+  color: #000000;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -432,10 +439,10 @@
   padding: 1.8rem 3.2rem;
   border-radius: 10rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
-  color: #FFFFFF;
   font-size: 18px;
   font-weight: 600;
   line-height: 144%;
+  color: #FFFFFF;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -466,10 +473,10 @@
 }
 
 .header-bottom {
-  color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
   font-weight: 400;
   line-height: 144%;
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
 }
 

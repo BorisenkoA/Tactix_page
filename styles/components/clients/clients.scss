@@ -1,4 +1,5 @@
 @use "../../utilites/variables" as *;
+@use "../../utilites/mixins" as *;
 
 .clients {
   background: $black;
@@ -26,10 +27,7 @@
 }
 
 .clients-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  gap: 1.6rem;
+  @include flex(row, space-between, stretch, 1.6rem);
 }
 
 .clients-text {
@@ -37,11 +35,7 @@
   padding: 10.4rem;
 
   h2 {
-    font-size: $h2-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -1.6%;
-    color: $white;
+    @include font(null, $h2-desctop, 600, 104%, -1.6rem, $white);
     max-width: 60rem;
   }
 
@@ -59,21 +53,14 @@
 }
 
 .clients-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  gap: 1.6rem;
+  @include flex(column, center, start, 1.6rem);
   background: $white-opacity-8;
   border-radius: 4rem;
   padding: 4.8rem 4rem;
 }
 
 .clients-person {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.6rem;
+  @include flex(row, space-between, center, 1.6rem);
 }
 
 .clients-person-image {
@@ -84,27 +71,15 @@
 }
 
 .clients-person-name {
-  font-size: $semibold-l;
-  font-weight: 600;
-  line-height: 144%;
-  letter-spacing: -1%;
-  color: $white;
+  @include font(null, $semibold-l, 600, 144%, -1%, $white);
 }
 
 .clients-person-position {
-  font-size: $regular-s;
-  font-weight: 400;
-  line-height: 144%;
-  letter-spacing: -0.5%;
-  color: $white-opacity-40;
+  @include font(null, $regular-s, 400, 144%, -0.5%, $white-opacity-40);
 }
 
 .clients-item-about {
-  font-size: $regular-l;
-  font-weight: 400;
-  line-height: 144%;
-  letter-spacing: -0.5%;
-  color: $white-opacity-60;
+  @include font(null, $regular-l, 400, 144%, -0.5%, $white-opacity-60);
 }
 
 @media (max-width: 1240px) and (min-width: 834px) {

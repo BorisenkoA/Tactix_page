@@ -57,16 +57,12 @@
 }
 
 .header-button {
-  background: $white-opacity-8;
-  padding: 1.2rem 2.2rem;
-  border-radius: 10rem;
-  border: 1px solid $white-opacity-12;
+  @include button($white-opacity-8, 1px solid $white-opacity-12, 10rem, 1.2rem 2.2rem, $white, pointer);
   @include font(null, $semibold-s, 600, null, null, $white);
   @include flex(row, center, center, 0);
   width: 100%;
   height: 100%;
   transition: all 0.3s ease;
-  cursor: pointer;
 
   &:hover {
     background: $white-opacity-40;
@@ -78,11 +74,8 @@
 }
 
 .header-info-button {
-  background: $accent-opacity-12;
-  border-radius: 10rem;
-  padding: 1.2rem 2.2rem;
+  @include button($accent-opacity-12, null, 10rem, 1.2rem 2.2rem, null, pointer);
   @include flex(row, null, center, 0.8rem);
-  cursor: pointer;
   transition: all 0.3s ease;
 
   a {
@@ -117,11 +110,8 @@
 }
 
 .header-info-action-primary {
-  background: $accent;
-  padding: 1.8rem 3.2rem;
-  border-radius: 10rem;
+  @include button($accent, null, 10rem, 1.8rem 3.2rem, null, pointer);
   @include font(null, $semibold-l, 600, 144%, null, $black);
-  cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
@@ -130,12 +120,8 @@
 }
 
 .header-info-action-secondary {
-  background: $white-opacity-8;
-  padding: 1.8rem 3.2rem;
-  border-radius: 10rem;
-  border: 1px solid $white-opacity-12;
+  @include button($white-opacity-8, 1px solid $white-opacity-12, 10rem, 1.8rem 3.2rem, null, pointer);
   @include font(null, $semibold-l, 600, 144%, null, $white);
-  cursor: pointer;
   transition: all 0.3s ease;
 
   &:hover {
@@ -186,21 +172,12 @@
   }
 
   .header-right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.6rem;
+    @include flex(row, space-between, center, 1.6rem);
   }
 
   .header-burger-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 1.05rem;
-    background: $white-opacity-8;
-    border-radius: 10rem;
-    border: 1px solid $white-opacity-12;
+    @include flex(row, center, center, null);
+    @include button($white-opacity-8, 1px solid $white-opacity-12, 10rem, 1.05rem, null, pointer);
   }
 
   .header-button {
@@ -215,14 +192,8 @@
   }
 
   .header-burger-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    padding: 1.05rem;
-    background: $white-opacity-8;
-    border-radius: 10rem;
-    border: 1px solid $white-opacity-12;
+    @include flex(row, center, center, null);
+    @include button($white-opacity-8, 1px solid $white-opacity-12, 10rem, 1.05rem, null, pointer);
   }
 
   .header-info-title {
@@ -235,11 +206,7 @@
 
   .header-info-action {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1.6rem;
+    @include flex(column, space-between, center, 1.6rem);
     position: relative;
     z-index: 1;
 

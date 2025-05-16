@@ -1,6 +1,9 @@
-@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
+@mixin flex($direction: null, $justify: null, $align: null, $gap: null) {
   display: flex;
-  flex-direction: $direction;
+
+  @if $direction != null {
+    flex-direction: $direction;
+  }
 
   @if $justify != null {
     justify-content: $justify;
@@ -10,23 +13,16 @@
     align-items: $align;
   }
 
-  @if $gap != 0 {
+  @if $gap != null {
     gap: $gap;
   }
 }
 
-@mixin font(
-  $family: null,
-  $size: null,
-  $weight: null,
-  $line-height: null,
-  $letter-spacing: null,
-  $color: null
-) {
+@mixin font($family: null, $size: null, $weight: null, $line-height: null, $letter-spacing: null, $color: null) {
   @if $family != null {
     font-family: $family;
   }
-  
+
   @if $size != null {
     font-size: $size;
   }
@@ -45,5 +41,31 @@
 
   @if $color != null {
     color: $color;
+  }
+}
+
+@mixin button($background: null, $border: null, $border-radius: null, $padding: null, $color: null, $cursor: null){
+  @if $background != null {
+    background: $background;
+  }
+
+  @if $border != null {
+    border: $border;
+  }
+
+  @if $border-radius != null {
+    border-radius: $border-radius;
+  }
+
+  @if $padding != null {
+    padding: $padding;
+  }
+
+  @if $color != null {
+    color: $color;
+  }
+
+  @if $cursor != null {
+    cursor: $cursor;
   }
 }

@@ -1,4 +1,5 @@
 @use "../../utilites/variables" as *;
+@use "../../utilites/mixins" as *;
 
 .contact {
   background: $black;
@@ -10,17 +11,11 @@
 }
 
 .contact-text {
-  display: flex;
-  justify-content: start;
-  align-items: center;
+  @include flex(row, start, center, null);
   padding: 10.04rem;
 
   h2 {
-    font-size: $h2-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -1.6%;
-    color: $white;
+    @include font(null, $h2-desctop, 600, 104%, -1.6rem, $white);
     max-width: 64rem;
   }
 
@@ -30,34 +25,22 @@
 }
 
 .contact-wrapper{
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
+  @include flex(row, null, center, 1.6rem);
 }
 
 .contact-form {
-  display: flex;
-  align-items: stretch;
-  gap: 1.6rem;
+  @include flex(row, null, stretch, 1.6rem);
   min-height: 54.9rem;
 }
 
 .contact-email,
 .contact-booking {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
+  @include flex(column, space-between, flex-start, 4rem);
   padding: 5.6rem 5.6rem 6.4rem 5.6rem;
 
   h5 {
-    font-size: $h5-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -1.6%;
-    color: $white;
+    @include font(null, $h5-desctop, 600, 104%, -1.6rem, $white);
   }
 
   span {
@@ -66,11 +49,7 @@
 }
 
 .form-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
+  @include flex(column, space-between, flex-start, 4rem);
   padding: 5.6rem 5.6rem 6.4rem 5.6rem;
   background: $white;
   border-radius: 4rem;
@@ -86,37 +65,21 @@
 }
 
 .form-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.2rem;
+  @include flex(column, space-between, flex-start, 1.2rem);
   width: 100%;
 
   h5 {
-    font-size: $h5-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -1.6%;
-    color: $black;
+    @include font(null, $h5-desctop, 600, 104%, -1.6rem, $black);
   }
 
   p {
-    font-size: $regular-l;
-    font-weight: 400;
-    line-height: 144%;
-    letter-spacing: -0.5%;
-    color: $black-opacity-60;
+    @include font(null, $regular-l, 400, 144%, -0.5%, $black-opacity-60);
   }
 }
 
 form {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.6rem;
+  @include flex(column, space-between, flex-start, 1.6rem);
 }
 
 input {
@@ -125,16 +88,13 @@ input {
   border: 0.1rem solid $black-opacity-20;
   border-radius: 1.2rem;
   outline: none;
-  font-size: $regular-l;
-  font-weight: 400;
-  line-height: 144%;
-  letter-spacing: -0.5%;
-  color: $black-opacity-50;
+  @include font(null, $regular-l, 400, 144%, -0.5%, $black-opacity-50);
 }
 
 input::placeholder {
   color: $black-opacity-20;
 }
+
 input:focus {
   border: 0.15rem solid $blue-light-1;
   box-shadow: 0 0 0.8rem $accent;
@@ -142,16 +102,8 @@ input:focus {
 }
 
 .form-button {
-  background: $accent;
-  border-radius: 10rem;
-  padding: 1.8rem 3.2rem;
-  font-size: $semibold-l;
-  font-weight: 600;
-  line-height: 144%;
-  letter-spacing: -1%;
-  color: $black;
-  border: none;
-  cursor: pointer;
+  @include font(null, $semibold-l 600, 144%, -1%, $black);
+  @include button($accent, none, 10rem, 1.8rem 3.2rem, null, pointer);
   transition: all 0.3s ease;
 
   &:hover {

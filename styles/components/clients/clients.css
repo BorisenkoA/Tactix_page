@@ -25,6 +25,7 @@
 
 .clients-wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
   gap: 1.6rem;
@@ -38,7 +39,7 @@
   font-size: 64px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6%;
+  letter-spacing: -1.6rem;
   color: #FFFFFF;
   max-width: 60rem;
 }
@@ -67,6 +68,7 @@
 
 .clients-person {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 1.6rem;

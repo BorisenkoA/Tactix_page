@@ -1,4 +1,5 @@
 @use "../../utilites/variables" as *;
+@use "../../utilites/mixins" as *;
 
 .innovation {
   background: $green-light-1;
@@ -12,21 +13,13 @@
 
 .innovation-item-text {
   grid-column: span 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
+  @include flex(column, space-between, flex-start, 2rem);
   padding: 10rem 20rem 10rem 10rem;
   border-radius: 4rem;
   transition: background 0.4s ease-in-out;
 
   h2 {
-    font-size: $h2-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $black;
+    @include font(null, $h2-desctop, 600, 104%, -0.2rem, $black);
     max-width: 64rem;
 
     span {
@@ -35,10 +28,7 @@
   }
 
   p {
-    font-size: $regular-xs;
-    font-weight: 400;
-    line-height: 144%;
-    color: $black-opacity-60;
+    @include font(null, $regular-xs, 400, 144%, null, $black-opacity-60);
     max-width: 36rem;
   }
 }
@@ -51,35 +41,21 @@
 .innovation-item-mission {
   grid-column: span 2;
   background: $black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5.6rem;
+  @include flex(row, space-between, center, 5.6rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
 }
 
 .innovation-item-mission-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.4rem;
+  @include flex(column, space-between, flex-start, 2.4rem);
   max-width: 48rem;
 
   h3 {
-    font-size: $h3-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $white;
+    @include font(null, $h3-desctop, 600, 104%, -0.2rem, $white);
   }
 
   p {
-    font-size: $regular-l;
-    font-weight: 400;
-    line-height: 144%;
-    color: $white-opacity-60;
+    @include font(null, $regular-l, 400, 144%, null, $white-opacity-60);
   }
 }
 
@@ -92,45 +68,27 @@
   height: 6rem;
   border-radius: 10rem;
   background: $white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1.8rem;
+  @include flex(row, center, center, 1.8rem);
 }
 
 .innovation-item-navigation {
   grid-column: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
+  @include flex(column, space-between, flex-start, 4rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
   background: $green-dark;
 }
 
 .innovation-item-navigation-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.6rem;
+  @include flex(column, space-between, flex-start, 1.6rem);
   max-width: 35rem;
 
   h4 {
-    font-size: $h4-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $white;
+    @include font(null, $h4-desctop, 600, 104%, -0.2rem, $white);
   }
+
   p {
-    font-size: $regular-l;
-    font-weight: 400;
-    line-height: 144%;
-    color: $white-opacity-60;
+    @include font(null, $regular-l, 400, 144%, null, $white-opacity-60);
   }
 }
 
@@ -140,36 +98,22 @@
 
 .innovation-item-values {
   grid-column: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 4rem;
+  @include flex(column, space-between, flex-start, 4rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
   background: $green-light-2;
 }
 
 .innovation-item-values-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1.6rem;
+  @include flex(column, space-between, flex-start, 1.6rem);
   max-width: 35rem;
 
   h4 {
-    font-size: $h4-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $black;
+    @include font(null, $h4-desctop, 600, 104%, -0.2rem, $black);
   }
+
   p {
-    font-size: $regular-l;
-    font-weight: 400;
-    line-height: 144%;
-    color: $black-opacity-60;
+    @include font(null, $regular-l, 400, 144%, null, $black-opacity-60);
   }
 }
 
@@ -179,30 +123,18 @@
 
 .innovation-item-collaboration {
   grid-column: span 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 5.6rem;
+  @include flex(column, space-between, flex-start, 5.6rem);
   padding: 6.4rem 5.6rem;
   border-radius: 4rem;
   background: $white;
 }
 
 .innovation-item-collaboration-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2.4rem;
+  @include flex(column, space-between, flex-start, 2.4rem);
   max-width: 48rem;
 
   h3 {
-    font-size: $h3-desctop;
-    font-weight: 600;
-    line-height: 104%;
-    letter-spacing: -0.2rem;
-    color: $black;
+    @include font(null, $h3-desctop, 600, 104%, -0.2rem, $black);
   }
 }
 
@@ -211,18 +143,12 @@
   height: 6rem;
   border-radius: 10rem;
   background: $green-dark;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(row, center, center, null);
   padding: 1.8rem;
 }
 
 .innovation-item-collaboration-images {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 6.4rem;
+  @include flex(row, space-between, center, 6.4rem);
   padding: 3.2rem 0;
   border-top: 1px solid #2462411A;
   border-bottom: 1px solid #2462411A;
@@ -778,12 +704,9 @@
   }
 
   .innovation-item-collaboration-images {
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 3.2rem;
+    @include flex(column, space-around, center, 3.2rem);
     border-top: 1px solid #2462411A;
     border-bottom: 1px solid #2462411A;
-    align-self: center;
 
     img {
       width: 11rem;
