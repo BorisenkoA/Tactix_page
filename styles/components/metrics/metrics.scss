@@ -35,7 +35,7 @@
   @include flex(column, space-between, flex-start, 2.4rem);
 
   h3 {
-    @include font(null, $h3-desctop, 600, 104%, -0.2rem, $white);
+    @include font(null, $h3-desctop, 600, 104%, null, $white);
   }
 
   p {
@@ -76,4 +76,138 @@
 
 .metrics-brand-image {
   padding: 3.9rem 0;
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .metrics {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+
+  .metrics-brand {
+    @include flex(column, space-between, flex-start, 4rem);
+  }
+
+  .metrics-brand-image {
+    padding: 5.5rem 0;
+
+    img {
+      width: 42rem;
+    }
+  }
+
+  .metrics-text {
+    @include flex(row, start, center, null);
+    padding: 8rem 6.4rem;
+
+    h2 {
+      @include font(null, $h2-tablet, 600, 104%, null, $white);
+      max-width: 52rem;
+    }
+  }
+
+  .metrics-list-metric {
+    @include font(null, $large-heading-tablet, 600, 104%, -0.2rem, $accent);
+  }
+
+  .metrics-brand-text {
+    max-width: 40rem;
+
+    h3 {
+      @include font(null, $h3-tablet, 600, 104%, -0.2rem, $white);
+    }
+  }
+}
+
+@media (max-width: 833px) and (min-width: 393px) {
+  .metrics {
+    padding: 1.6rem 2.4rem 1.2rem;
+  }
+
+  .metrics-brand {
+    padding: 4rem 2.4rem;
+    @include flex(column, space-between, flex-start, 4rem);
+  }
+
+  .metrics-brand-image {
+    padding: 3.9rem 0;
+
+    img {
+      width: 29rem;
+    }
+  }
+
+  .metrics-text {
+    @include flex(row, start, center, null);
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      @include font(null, $h2-mobile, 600, 104%, null, $white);
+      max-width: 30rem;
+    }
+  }
+
+  .metrics-list-item {
+    flex: 0 1 calc(100% - 1.2rem);
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+    @include flex(column, space-between, null, 4rem);
+  }
+
+  .metrics-list-metric {
+    @include font(null, $large-heading-mobile, 600, 104%, -0.2rem, $accent);
+  }
+
+  .metrics-brand-text {
+    max-width: 32rem;
+
+    h3 {
+      @include font(null, $h3-mobile, 600, 104%, null, $white);
+    }
+  }
+}
+
+@media (max-width: 392px) and (min-width: 300px) {
+  .metrics {
+    padding: 1.6rem 2.4rem 1.2rem;
+  }
+
+  .metrics-brand {
+    padding: 4rem 2.4rem;
+    @include flex(column, space-between, flex-start, 4rem);
+  }
+
+  .metrics-brand-image {
+    padding: 3.9rem 0;
+
+    img {
+      width: 20rem;
+    }
+  }
+
+  .metrics-text {
+    @include flex(row, start, center, null);
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      @include font(null, $h2-mobile, 600, 104%, null, $white);
+      max-width: 30rem;
+    }
+  }
+
+  .metrics-list-item {
+    flex: 0 1 calc(100% - 1.2rem);
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+    @include flex(column, space-between, null, 4rem);
+  }
+
+  .metrics-list-metric {
+    @include font(null, $large-heading-mobile, 600, 104%, -0.2rem, $accent);
+  }
+
+  .metrics-brand-text {
+    max-width: 32rem;
+
+    h3 {
+      @include font(null, $h3-mobile, 600, 104%, null, $white);
+    }
+  }
 }

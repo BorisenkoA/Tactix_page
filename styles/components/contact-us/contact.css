@@ -18,7 +18,6 @@
   font-size: 64px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #FFFFFF;
   max-width: 64rem;
 }
@@ -56,7 +55,6 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #FFFFFF;
 }
 .contact-email span,
@@ -97,7 +95,6 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #000000;
 }
 .form-info p {
@@ -158,4 +155,185 @@ input:focus {
 }
 .form-button:hover {
   background: #4DFFA2;
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .contact {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+  .contact-text {
+    padding: 8rem 6.4rem;
+  }
+  .contact-text h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 52rem;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+  }
+  .contact-email,
+  .contact-booking {
+    width: 50%;
+    padding: 5.6rem 4rem 6.4rem 4rem;
+  }
+  .contact-email h5,
+  .contact-booking h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .form-info h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #000000;
+  }
+  .contact-form img {
+    width: 100%;
+    height: 68rem;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .contact {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .contact-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5.6rem 2.4rem;
+  }
+  .contact-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .contact-email,
+  .contact-booking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding: 3.2rem 2.4rem;
+  }
+  .contact-email h5,
+  .contact-booking h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+    min-height: 101rem;
+  }
+  .contact-form img {
+    width: 100%;
+    height: 48rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4rem;
+  }
+  .form-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+  .form-info h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #000000;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .contact {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .contact-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5.6rem 2.4rem;
+  }
+  .contact-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .contact-email,
+  .contact-booking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding: 3.2rem 2.4rem;
+  }
+  .contact-email h5,
+  .contact-booking h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+    min-height: 101rem;
+  }
+  .contact-form img {
+    width: 100%;
+    height: 48rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4rem;
+  }
+  .form-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+  .form-info h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #000000;
+  }
 }/*# sourceMappingURL=contact.css.map */

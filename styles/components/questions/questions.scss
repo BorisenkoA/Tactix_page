@@ -15,7 +15,7 @@
   padding: 10.04rem;
 
   h2 {
-    @include font(null, $h2-desctop, 600, 104%, -1.6rem, $white);
+    @include font(null, $h2-desctop, 600, 104%, null, $white);
     max-width: 64rem;
   }
 
@@ -71,4 +71,61 @@
 
 .questions-item-arrow img {
   transition: transform 0.3s ease;
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .questions {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+
+  .questions-text {
+    padding: 8rem 6.4rem;
+
+    h2 {
+      @include font(null, $h2-tablet, 600, 104%, null, $white);
+      max-width: 52rem;
+    }
+  }
+
+  .questions-item-answer {
+    max-width: 60rem;
+  }
+}
+
+@media (max-width: 833px) and (min-width: 393px) {
+  .questions {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .questions-text {
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      @include font(null, $h2-mobile, 600, 104%, null, $white);
+      max-width: 30rem;
+    }
+  }
+
+  .questions-item {
+    padding: 2rem 2.4rem;
+  }
+}
+
+@media (max-width: 392px) and (min-width: 300px) {
+  .questions {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .questions-text {
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      @include font(null, $h2-mobile, 600, 104%, null, $white);
+      max-width: 30rem;
+    }
+  }
+
+  .questions-item {
+    padding: 2rem 2.4rem;
+  }
 }

@@ -54,9 +54,26 @@
   justify-content: space-between;
   align-items: center;
 }
-.footer-rights p, .footer-rights a {
+.footer-rights p,
+.footer-rights a {
   font-size: 12px;
   font-weight: 400;
   line-height: 144%;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .footer {
+    padding: 8rem 4.8rem 6.4rem 4.6rem;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .footer {
+    padding: 5.6rem 2.4rem;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .footer {
+    padding: 5.6rem 2.4rem;
+  }
 }/*# sourceMappingURL=footer.css.map */

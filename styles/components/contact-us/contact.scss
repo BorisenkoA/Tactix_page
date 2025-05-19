@@ -15,7 +15,7 @@
   padding: 10.04rem;
 
   h2 {
-    @include font(null, $h2-desctop, 600, 104%, -1.6rem, $white);
+    @include font(null, $h2-desctop, 600, 104%, null, $white);
     max-width: 64rem;
   }
 
@@ -24,7 +24,7 @@
   }
 }
 
-.contact-wrapper{
+.contact-wrapper {
   @include flex(row, null, center, 1.6rem);
 }
 
@@ -40,7 +40,7 @@
   padding: 5.6rem 5.6rem 6.4rem 5.6rem;
 
   h5 {
-    @include font(null, $h5-desctop, 600, 104%, -1.6rem, $white);
+    @include font(null, $h5-desctop, 600, 104%, null, $white);
   }
 
   span {
@@ -69,7 +69,7 @@
   width: 100%;
 
   h5 {
-    @include font(null, $h5-desctop, 600, 104%, -1.6rem, $black);
+    @include font(null, $h5-desctop, 600, 104%, null, $black);
   }
 
   p {
@@ -108,5 +108,159 @@ input:focus {
 
   &:hover {
     background: $accent-hover;
+  }
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .contact {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+
+  .contact-text {
+    padding: 8rem 6.4rem;
+
+    h2 {
+      @include font(null, $h2-tablet, 600, 104%, null, $white);
+      max-width: 52rem;
+    }
+  }
+
+  .contact-form {
+    @include flex(column, null, stretch, 1.6rem);
+  }
+
+  .contact-email,
+  .contact-booking {
+    width: 50%;
+    padding: 5.6rem 4rem 6.4rem 4rem;
+
+    h5 {
+      @include font(null, $h5-tablet, 600, 104%, null, $white);
+    }
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  .form-info {
+    h5 {
+      @include font(null, $h5-tablet, 600, 104%, null, $black);
+    }
+  }
+
+  .contact-form img {
+    width: 100%;
+    height: 68rem;
+  }
+}
+
+@media (max-width: 833px) and (min-width: 393px) {
+  .contact {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .contact-text {
+    @include flex(row, start, center, null);
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      @include font(null, $h2-mobile, 600, 104%, null, $white);
+      max-width: 30rem;
+    }
+  }
+
+  .contact-wrapper {
+    @include flex(column, null, center, 1.6rem);
+  }
+
+  .contact-email,
+  .contact-booking {
+    width: 100%;
+    @include flex(column, space-between, flex-start, 2.4rem);
+    padding: 3.2rem 2.4rem;
+
+    h5 {
+      @include font(null, $h5-mobile, 600, 104%, null, $white);
+    }
+  }
+
+  .contact-form {
+    @include flex(column, null, stretch, 1.6rem);
+    min-height: 101rem;
+  }
+
+  .contact-form img {
+    width: 100%;
+    height: 48rem;
+    object-fit: cover;
+    border-radius: 4rem;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+
+  .form-info {
+    h5 {
+      @include font(null, $h5-mobile, 600, 104%, null, $black);
+    }
+  }
+}
+
+@media (max-width: 392px) and (min-width: 300px) {
+  .contact {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+
+  .contact-text {
+    @include flex(row, start, center, null);
+    padding: 5.6rem 2.4rem;
+
+    h2 {
+      @include font(null, $h2-mobile, 600, 104%, null, $white);
+      max-width: 30rem;
+    }
+  }
+
+  .contact-wrapper {
+    @include flex(column, null, center, 1.6rem);
+  }
+
+  .contact-email,
+  .contact-booking {
+    width: 100%;
+    @include flex(column, space-between, flex-start, 2.4rem);
+    padding: 3.2rem 2.4rem;
+
+    h5 {
+      @include font(null, $h5-mobile, 600, 104%, null, $white);
+    }
+  }
+
+  .contact-form {
+    @include flex(column, null, stretch, 1.6rem);
+    min-height: 101rem;
+  }
+
+  .contact-form img {
+    width: 100%;
+    height: 48rem;
+    object-fit: cover;
+    border-radius: 4rem;
+  }
+
+  .form-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+
+  .form-info {
+    h5 {
+      @include font(null, $h5-mobile, 600, 104%, null, $black);
+    }
   }
 }

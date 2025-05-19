@@ -40,7 +40,26 @@
   width: 100%;
   @include flex(row, space-between, center, null);
 
-  p, a {
+  p,
+  a {
     @include font(null, $regular-xs, 400, 144%, null, $white-opacity-60);
+  }
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .footer {
+    padding: 8rem 4.8rem 6.4rem 4.6rem;
+  }
+}
+
+@media (max-width: 833px) and (min-width: 393px) {
+    .footer {
+    padding: 5.6rem 2.4rem;
+  }
+}
+
+@media (max-width: 392px) and (min-width: 300px) {
+    .footer {
+    padding: 5.6rem 2.4rem;
   }
 }

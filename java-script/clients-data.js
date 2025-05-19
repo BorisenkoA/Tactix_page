@@ -60,53 +60,38 @@ const clientsRightColumn = [
   },
 ];
 
-const clientsLeftColumnToPaste = clientsLeftColumn
-  .map((client) => {
-    return `
-      <div class="clients-item">
-        <div class="clients-person">
-          <div class="clients-person-image">
-            <img src="${client.img}" alt="" />
+function renderClients(clientsData, container) {
+  const containerElement =
+    typeof container === "string"
+      ? document.querySelector(container)
+      : container;
+
+  if (!containerElement) {
+    console.error(`Контейнер не був знайдений: ${container}`);
+    return;
+  }
+
+  const clientsDOM = clientsData
+    .map((client) => {
+      return `
+        <div class="clients-item">
+          <div class="clients-person">
+            <div class="clients-person-image">
+              <img src="${client.img || ""}" alt="" />
+            </div>
+            <div class="clients-person-info">
+              <p class="clients-person-name">${client.name}</p>
+              <p class="clients-person-position">${client.position}</p>
+            </div>
           </div>
-          <div class="clients-person-info">
-            <p class="clients-person-name">${client.name}</p>
-            <p class="clients-person-position">${client.position}</p>
-          </div>
+          <p class="clients-item-about">${client.about}</p>
         </div>
-        <p class="clients-item-about">${client.about}</p>
-      </div>
     `;
-  })
-  .join("");
+    })
+    .join("");
 
-const clientsRightColumnToPaste = clientsRightColumn
-  .map((client) => {
-    return `
-      <div class="clients-item">
-        <div class="clients-person">
-          <div class="clients-person-image">
-            <img src="${client.img}" alt="" />
-          </div>
-          <div class="clients-person-info">
-            <p class="clients-person-name">${client.name}</p>
-            <p class="clients-person-position">${client.position}</p>
-          </div>
-        </div>
-        <p class="clients-item-about">${client.about}</p>
-      </div>
-    `;
-  })
-  .join("");
+  containerElement.insertAdjacentHTML("afterbegin", clientsDOM);
+}
 
-const clientsListLeftColumn = document.querySelector(".clients-left");
-const clientsListRightColumn = document.querySelector(".clients-right");
-
-clientsListLeftColumn.insertAdjacentHTML(
-  "afterbegin",
-  clientsLeftColumnToPaste
-);
-
-clientsListRightColumn.insertAdjacentHTML(
-  "afterbegin",
-  clientsRightColumnToPaste
-);
+renderClients(clientsLeftColumn, ".clients-left");
+renderClients(clientsRightColumn, ".clients-right");
