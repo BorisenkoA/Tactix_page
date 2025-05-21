@@ -1,24 +1,24 @@
 const servicesList = [
   {
-    img: "./images/flash.svg",
+    img: "/Tactix_page/images/flash.svg",
     heading: "Search Engine Optimization",
     describe:
       "Enhance your online visibility and drive organic traffic to your website with our expert SEO strategies.",
   },
   {
-    img: "./images/cursor.svg",
+    img: "/Tactix_page/images/cursor.svg",
     heading: "Pay-Per-Click Advertising",
     describe:
       "Accelerate your digital growth with targeted PPC campaigns tailored to your business goals.",
   },
   {
-    img: "./images/person.svg",
+    img: "/Tactix_page/images/person.svg",
     heading: "Social Media Marketing",
     describe:
       "Engage your audience and build brand loyalty with our comprehensive social media marketing solutions.",
   },
   {
-    img: "./images/bookmark.svg",
+    img: "/Tactix_page/images/bookmark.svg",
     heading: "Content Marketing",
     describe:
       "Fuel your digital strategy with high-quality content that resonates with your audience and drives meaningful engagement.",
