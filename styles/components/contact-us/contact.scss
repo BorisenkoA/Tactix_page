@@ -102,7 +102,7 @@ input:focus {
 }
 
 .form-button {
-  @include font(null, $semibold-l 600, 144%, -1%, $black);
+  @include font(null, $semibold-l, 600, 144%, -1%, $black);
   @include button($accent, none, 10rem, 1.8rem 3.2rem, null, pointer);
   transition: all 0.3s ease;
 

@@ -2108,7 +2108,6 @@
   font-size: 64px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #FFFFFF;
   max-width: 60rem;
 }
@@ -2294,7 +2293,6 @@
   font-size: 56px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -0.2rem;
   color: #FFFFFF;
 }
 .metrics-brand-text p {
@@ -2357,6 +2355,169 @@
   padding: 3.9rem 0;
 }
 
+@media (max-width: 1240px) and (min-width: 834px) {
+  .metrics {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+  .metrics-brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .metrics-brand-image {
+    padding: 5.5rem 0;
+  }
+  .metrics-brand-image img {
+    width: 42rem;
+  }
+  .metrics-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 8rem 6.4rem;
+  }
+  .metrics-text h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 52rem;
+  }
+  .metrics-list-metric {
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: #2FE784;
+  }
+  .metrics-brand-text {
+    max-width: 40rem;
+  }
+  .metrics-brand-text h3 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .metrics {
+    padding: 1.6rem 2.4rem 1.2rem;
+  }
+  .metrics-brand {
+    padding: 4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .metrics-brand-image {
+    padding: 3.9rem 0;
+  }
+  .metrics-brand-image img {
+    width: 29rem;
+  }
+  .metrics-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5.6rem 2.4rem;
+  }
+  .metrics-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .metrics-list-item {
+    flex: 0 1 calc(100% - 1.2rem);
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .metrics-list-metric {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: #2FE784;
+  }
+  .metrics-brand-text {
+    max-width: 32rem;
+  }
+  .metrics-brand-text h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .metrics {
+    padding: 1.6rem 2.4rem 1.2rem;
+  }
+  .metrics-brand {
+    padding: 4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  .metrics-brand-image {
+    padding: 3.9rem 0;
+  }
+  .metrics-brand-image img {
+    width: 20rem;
+  }
+  .metrics-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5.6rem 2.4rem;
+  }
+  .metrics-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .metrics-list-item {
+    flex: 0 1 calc(100% - 1.2rem);
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+  .metrics-list-metric {
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 104%;
+    letter-spacing: -0.2rem;
+    color: #2FE784;
+  }
+  .metrics-brand-text {
+    max-width: 32rem;
+  }
+  .metrics-brand-text h3 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+}
 .questions {
   background: #000000;
   display: grid;
@@ -2377,7 +2538,6 @@
   font-size: 64px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #FFFFFF;
   max-width: 64rem;
 }
@@ -2454,6 +2614,60 @@
   transition: transform 0.3s ease;
 }
 
+@media (max-width: 1240px) and (min-width: 834px) {
+  .questions {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+  .questions-text {
+    padding: 8rem 6.4rem;
+  }
+  .questions-text h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 52rem;
+  }
+  .questions-item-answer {
+    max-width: 60rem;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .questions {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .questions-text {
+    padding: 5.6rem 2.4rem;
+  }
+  .questions-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .questions-item {
+    padding: 2rem 2.4rem;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .questions {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .questions-text {
+    padding: 5.6rem 2.4rem;
+  }
+  .questions-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .questions-item {
+    padding: 2rem 2.4rem;
+  }
+}
 .contact {
   background: #000000;
   display: grid;
@@ -2474,7 +2688,6 @@
   font-size: 64px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #FFFFFF;
   max-width: 64rem;
 }
@@ -2512,7 +2725,6 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #FFFFFF;
 }
 .contact-email span,
@@ -2553,7 +2765,6 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 104%;
-  letter-spacing: -1.6rem;
   color: #000000;
 }
 .form-info p {
@@ -2601,10 +2812,11 @@ input:focus {
 }
 
 .form-button {
-  font-size: 18px 600;
-  font-weight: 144%;
-  line-height: -1%;
-  letter-spacing: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 144%;
+  letter-spacing: -1%;
+  color: #000000;
   background: #2FE784;
   border: none;
   border-radius: 10rem;
@@ -2616,6 +2828,186 @@ input:focus {
   background: #4DFFA2;
 }
 
+@media (max-width: 1240px) and (min-width: 834px) {
+  .contact {
+    padding: 1.6rem 4.8rem 9rem;
+  }
+  .contact-text {
+    padding: 8rem 6.4rem;
+  }
+  .contact-text h2 {
+    font-size: 52px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 52rem;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+  }
+  .contact-email,
+  .contact-booking {
+    width: 50%;
+    padding: 5.6rem 4rem 6.4rem 4rem;
+  }
+  .contact-email h5,
+  .contact-booking h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .form-info h5 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #000000;
+  }
+  .contact-form img {
+    width: 100%;
+    height: 68rem;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .contact {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .contact-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5.6rem 2.4rem;
+  }
+  .contact-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .contact-email,
+  .contact-booking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding: 3.2rem 2.4rem;
+  }
+  .contact-email h5,
+  .contact-booking h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+    min-height: 101rem;
+  }
+  .contact-form img {
+    width: 100%;
+    height: 48rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4rem;
+  }
+  .form-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+  .form-info h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #000000;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .contact {
+    padding: 1.6rem 2.4rem 9rem;
+  }
+  .contact-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding: 5.6rem 2.4rem;
+  }
+  .contact-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+    max-width: 30rem;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+  }
+  .contact-email,
+  .contact-booking {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2.4rem;
+    padding: 3.2rem 2.4rem;
+  }
+  .contact-email h5,
+  .contact-booking h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #FFFFFF;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1.6rem;
+    min-height: 101rem;
+  }
+  .contact-form img {
+    width: 100%;
+    height: 48rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 4rem;
+  }
+  .form-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 3.2rem 2.4rem 4rem 2.4rem;
+  }
+  .form-info h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 104%;
+    color: #000000;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -2672,9 +3064,26 @@ input:focus {
   justify-content: space-between;
   align-items: center;
 }
-.footer-rights p, .footer-rights a {
+.footer-rights p,
+.footer-rights a {
   font-size: 12px;
   font-weight: 400;
   line-height: 144%;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 1240px) and (min-width: 834px) {
+  .footer {
+    padding: 8rem 4.8rem 6.4rem 4.6rem;
+  }
+}
+@media (max-width: 833px) and (min-width: 393px) {
+  .footer {
+    padding: 5.6rem 2.4rem;
+  }
+}
+@media (max-width: 392px) and (min-width: 300px) {
+  .footer {
+    padding: 5.6rem 2.4rem;
+  }
 }/*# sourceMappingURL=index.css.map */

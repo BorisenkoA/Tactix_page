@@ -244,10 +244,10 @@
           <h5>Let’s Get Started</h5>
           <p>Provide us with some details and let's begin transforming your business together!</p>
         </div>
-        <form action="#">
-          <input type="text" placeholder="Full Name" required>
-          <input type="email" placeholder="Email" required>
-          <input type="text" placeholder="How can we help you?" required>
+        <form id="contactForm">
+          <input type="text" name="fullName" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="text" name="message" placeholder="How can we help you?" required>
           <button class="form-button" type="submit">Send a Message</button>
         </form>
       </div>
@@ -278,6 +278,8 @@
   <script src="./java-script/clients-data.js"></script>
   <script src="./java-script/metrics-list-data.js"></script>
   <script src="./java-script/questions-list-data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.4/dist/umd/supabase.min.js"></script>
+  <script src="./java-script/form.js"></script>
   <script src="./java-script/script.js" defer></script>
   
 </body>

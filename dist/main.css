@@ -2856,10 +2856,11 @@ input:focus {
 }
 
 .form-button {
-  font-size: 18px 600;
-  font-weight: 144%;
-  line-height: -1%;
-  letter-spacing: #000000;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 144%;
+  letter-spacing: -1%;
+  color: #000000;
   background: #2FE784;
   border: none;
   border-radius: 10rem;
